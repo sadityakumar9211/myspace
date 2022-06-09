@@ -1,0 +1,12 @@
+
+.event{
+    background: linear-gradient(120deg, #ffcfd2,#f1c0e8,#cfbaf0,#a3c4f3,#90dbf4,#8eecf5);
+    transition: all;
+    transition-duration: 400ms;
+    box-shadow: 2px 2px 2px rgb(193, 190, 190);
+}
+.event:hover{
+    transform: scale(1.04);
+    background: radial-gradient(#fde4cf,#fde4cf,#ffcfd2,#f1c0e8,#cfbaf0,#a3c4f3,#90dbf4,#8eecf5);    
+    box-shadow: 4px 4px 4px rgb(193, 190, 190);
+} 

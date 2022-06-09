@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar_dashboard{
+    margin-top: 5px;
+    display:block;
+    width: 230px;
+    height: max-content;
+    background-color:whitesmoke;
+    border-radius:8px;
+    box-shadow: 5px 7px 10px rgb(0,0,0,0.5);
+}
+#browse{
+    display: inline-block;
+    font-family:Georgia, 'Times New Roman', Times, serif, Georgia, Times;
+    margin-bottom: 4px;
+}
+.sidebar_dashboard ul{
+    position: relative;
+    list-style-type: none;
+}
+.sidebar_dashboard ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    padding:10px 30px;
+    height: 50px;
+    transition: 0.5 ease-in-out;
+    /* border-radius:  15px; */
+    border-bottom: 2px rgb(233, 232, 232) solid;
+}
+
+.sidebar_dashboard ul li a:hover{
+    background-color: #38b000;
+    color:#fff;
+
+}
+.sidebar_dashboard ul ul{
+    position:absolute;
+    left: 190px;
+    width: 200px;
+    top:-20px;
+    display:none;
+    background-color: rgb(239, 237, 237);
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0,0,1);
+}
+.sidebar_dashboard ul span{
+    position: absolute;
+    right:10px;
+    font-size: 1.5em;
+}
+.sidebar_dashboard ul .dropdown{
+    position:relative;
+}
+.sidebar_dashboard ul .dropdown:hover ul{
+    display:initial;
+}
+

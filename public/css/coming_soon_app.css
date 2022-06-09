@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(90deg, #ffcfd2,#ffcfd2,#f1c0e8,#a3c4f3,#90dbf4,#98f5e1,#b9fbc0);
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:6%;
+    padding-bottom: 10%;
+}
+div div{
+    font-family: 'Monoton', cursive;
+    font-size: 6rem;
+    font-weight:400;
+    color:rgb(140, 91, 178);
+}
+@media screen and (max-width: 800px) {
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top:15%;
+    }
+    div div{
+        font-family: 'Monoton', cursive;
+        font-size: 2.5rem;
+        font-weight:400;
+    }
+}
+@media screen and (max-width: 600px){
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top:24%;
+    }
+}

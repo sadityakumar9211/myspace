@@ -1,0 +1,44 @@
+.uvdv{
+    border-radius: 10px;
+    padding: 4px 4px 4px 4px; 
+    background-color: rgb(202, 205, 205);
+    color:black;
+}
+
+
+.ans{
+    background-color: #fafafa;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-radius: 10px;
+    transition-duration:0.3s;
+    transition-delay: 30ms; 
+    font-family: 'Raleway', sans-serif;
+    font-size: normal;
+    font-weight: thin;
+}
+.ans:hover{
+    background-color: #f4f2f2;
+    box-shadow: 1px 1px 3px rgb(165, 165, 165);
+    transform: scale(1.001);
+}
+.articleId{
+    color:rgb(125, 71, 187);
+    margin-right: 10px;
+}
+.articleId:hover{
+    text-decoration: underline;
+}
+.heading{
+    transition: text-decoration, font-weight ease-in;
+    transition-duration: 0.2s;
+
+}
+.heading:hover{
+    text-decoration: underline;
+}
+.readmore:hover{
+    text-decoration: underline;
+}

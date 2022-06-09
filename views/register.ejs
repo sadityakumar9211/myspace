@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/register_app.css">
+    <link rel="icon" href="/images/logo.png">
+    <title>MySpace - Sign Up</title>
+
+</head>
+
+<body>
+    <div class="registration">
+        <!-- Features Step-wise -->
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-8 mx-auto flex flex-wrap">
+                <div class="flex flex-wrap w-full">
+                    <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+                        <h1 class="font-seimbold text-gray-900 text-xl mr-4 mb-6 ml-12">Welcome to MySpace</h1>
+                        <div class="flex relative pb-6">
+                            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                            </div>
+                            <div
+                                class="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 inline-flex items-center justify-center text-white relative z-10">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M8 17l4 4 4-4m-4-5v9"></path>
+                                    <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-grow pl-4">
+                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Resources
+                                </h2>
+                                <p class="leading-relaxed">Students after signing in to the dashboard can
+                                    access valuable resources like notes, PYQ, lecture slides.</p>
+                            </div>
+                        </div>
+                        <div class="flex relative pb-6">
+                            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                            </div>
+                            <div
+                                class="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 inline-flex items-center justify-center text-white relative z-10">
+                                <img src="/images/QA icon.png" alt="QA Forum Logo" class="h-6 w-6">
+                            </div>
+                            <div class="flex-grow pl-4">
+                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">QA Forum
+                                </h2>
+                                <p class="leading-relaxed">In QA Forum, students can ask and answer
+                                    academic, technical and coding related questions.</p>
+                            </div>
+                        </div>
+                        <div class="flex relative pb-6">
+                            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                            </div>
+                            <div
+                                class="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 inline-flex items-center justify-center text-white relative z-10">
+                                <img src="/images/articles icon.png" alt="articles icon" class="h-6 w-6">
+                            </div>
+                            <div class="flex-grow pl-4">
+                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Technical
+                                    Articles</h2>
+                                <p class="leading-relaxed">In Technical Articles section,students can post
+                                    articles based to their technical interests. Others can read and upvote their
+                                    articles.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex relative pb-6">
+                            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                            </div>
+                            <div
+                                class="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 inline-flex items-center justify-center text-white relative z-10">
+                                <img src="/images/schedule icon.png" alt="schedule icon" class="w-6 h-6">
+                            </div>
+                            <div class="flex-grow pl-4">
+                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Schedule
+                                </h2>
+                                <p class="leading-relaxed">Here the students can view their updated class
+                                    schedules after Signing In to the website.</p>
+                            </div>
+                        </div>
+                        <div class="flex relative pb-6">
+                            <div
+                                class="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 inline-flex items-center justify-center text-white relative z-10">
+                                <img src="/images/events icon.png" alt="events icon" class="h-6 w-6">
+                            </div>
+                            <div class="flex-grow pl-4">
+                                <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Events</h2>
+                                <p class="leading-relaxed">In this section of the website, students can
+                                    view the details of upcoming events organised by various Institute clubs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <main class="center">
+            <div>
+                <a href="/landing">
+                    <img src="/images/logo.png" class="w-12 h-12 ml-12 mt-1 mb-2 mr-1 inline-block" alt="MySpace logo">
+                </a>
+                <p class="text-gray-900 text-xl font-medium title-font mt-10 inline-block">Sign Up with MySpace</p>
+            </div>
+            <form action="/register" method="POST">
+                <div class="txt_field">
+                    <input type="text" autocomplete="off" name="name" required>
+                    <label>Full Name</label>
+                </div>
+                <div class="txt_field">
+                    <input type="email" autocomplete="off" name="username" pattern=".+@iiitm\.ac\.in" required>
+                    <label>Institutional E-Mail</label>
+                </div>
+                <div class="txt_field">
+                    <label for="year">Year</label>
+                    <input type="number" autocomplete="off" name="year" min="2017" max="2022" step="1" />
+                </div>
+
+                <label for="batchType"></label>
+
+                <div class="flex justify-center">
+                    <div class="mb-3 xl:w-96">
+                        <select name="batch" class="form-select appearance-none
+                    block
+                    w-full
+                    px-3
+                    py-1.5
+                    text-base
+                    font-normal
+                    text-gray-700
+                    bg-white bg-clip-padding bg-no-repeat
+                    border border-solid border-gray-300
+                    rounded
+                    transition
+                    ease-in-out
+                    m-0
+                    focus:text-gray-700 focus:bg-white focus:border-green-600 focus:outline-4">
+                            <option selected disabled>|--Select Batch--|</option>
+                            <option value="BCS">BCS</option>
+                            <option value="IMT">IMT</option>
+                            <option value="IMG">IMG</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="txt_field">
+                    <input type="password" autocomplete="off" name="password" required>
+                    <label>Password</label>
+                </div>
+
+                <input type="submit" value="Create account" class="mb-2">
+                <hr>
+                <div class="text-gray-900 text-xl title-font text-center mt-2 mb-2">OR</div>
+                <div class="signup_link ">
+                    Already Registered? <a href="/login">Log In</a>
+                </div>
+            </form>
+        </main>
+    </div>
+
+</body>
+
+</html>

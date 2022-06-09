@@ -1,0 +1,27 @@
+.que{
+    background-color: #f4f4f4;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-radius: 10px;
+    transition-duration:0.3s;
+    transition-delay: 30ms; 
+    font-family: 'Raleway', sans-serif;
+    font-size: normal;
+    font-weight: thin;
+    box-shadow:1px 1px 3px rgb(165, 165, 165); ;
+}
+.que:hover{
+    background-color: #ececec;
+    box-shadow: 2px 2px 4px rgb(165, 165, 165);
+    transform: scale(1.001);
+}
+.questionId{
+    color:rgb(125, 71, 187);
+    margin-right: 10px;
+}
+.questionId:hover{
+    text-decoration: underline;
+    font-weight: 500;
+}

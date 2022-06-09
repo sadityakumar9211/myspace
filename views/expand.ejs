@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head starts here -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="icon" href="/images/logo.png">
+    <!-- Tailwind css CDN -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Manual CSS Style Sheet -->
+    <link rel="stylesheet" href="/css/expand_app.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,200&display=swap"
+        rel="stylesheet">
+
+    <title>Read Technical Article</title>
+    <!--PROVIDE THE FIRST NAME HERE-->
+</head>
+<!-- head ends here -->
+
+<body id="onearticlebody">
+    <!-- Header starts here -->
+    <header>
+        <!-- Navbar goes here -->
+        <nav class="bg-white shadow-lg">
+            <div class="max-w-8xl mx-auto px-3">
+                <div class="flex justify-between">
+                    <div class="flex space-x-7">
+                        <div>
+                            <!-- Website Logo -->
+                            <a href="/" class="flex items-center py-4 px-2">
+                                <img src="/images/logo.png" alt="MySpace Logo" class="h-12 w-12 mr-2">
+                                <span class="font-seimbold text-gray-900 text-xl mr-4">MySpace</span>
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="/"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">Resources</a>
+                            <a href="/qa"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">QA
+                                Forum</a>
+                            <a href="/article"
+                                class="py-4 px-2 text-green-500  border-b-4 border-green-500 font-semibold">Technical
+                                Articles</a>
+
+                            <a href="/schedule"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">Schedule</a>
+                            <a href="/event"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">Events</a>
+                            <a href="/about"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">About</a>
+                        </div>
+                    </div>
+                    <!-- Secondary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-3 ">
+                        <img src="/images/user.png" alt="profile picture"
+                            class="rounded-full h-10 w-10">
+                        <a class="font-medium text-white bg-green-500 px-2 py-1 rounded hover:bg-green-400 transition duration-300"
+                            href="/logout">Logout</a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Mobile Menu Items-->
+            <div class="hidden mobile-menu">
+                <ul>
+                    <li><a href="/"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Resources</a>
+                    </li>
+                    <li><a href="/qa"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">QA
+                            Forum</a>
+                    </li>
+                    <li class="active"><a href="/article" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Technical
+                            Articles</a>
+                    </li>
+                    <li><a href="/schedule"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Schedule</a>
+                    </li>
+                    <li class="active"><a href="/event"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Events</a>
+                    </li>
+                    <li class="active"><a href="/about"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a>
+                </li>
+                </ul>
+            </div>
+            <script>
+                const btn = document.querySelector("button.mobile-menu-button");
+                const menu = document.querySelector(".mobile-menu");
+
+                btn.addEventListener("click", () => {
+                    menu.classList.toggle("hidden");
+                });
+            </script>
+        </nav>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Technical Article Section Starts Here -->
+    <section class="text-gray-600 body-font overflow-hidden md:mx-32 mx-5 py-6">
+        <div class="container md:px-10 py-12 mx-auto">
+            <div class="-my-8 divide-gray-300">
+                <!-- Question Displayed Here -->
+                <div class="article py-8 flex flex-wrap md:flex-wrap flex-column md:flex-row-reverse mb-4">
+                    <div class="md:flex-grow flex-row">
+                        <a href="#">
+                            <h2 class="text-2xl font-medium text-gray-900 mb-2 ml-6 heading"> <%=header%></h2>
+                        </a>
+                        <p class="md:text-base text-sm text-gray-800 mb-0 ml-6 mr-6 text-justify">
+                            <%=content%>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Technical Articles Section Ends Here -->
+
+
+
+   <!-- Section 5 - Footer -->
+   <footer class="text-gray-600 body-font">
+    <hr>
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img src="/images/logo.png" class="w-12 h-12" alt="MySpace Logo">
+            <span class="ml-3 text-xl">MySpace</span>
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+            ©
+            <a href="/">2022 MySpace</a>
+            <a href="mailto:myspace.iiitm@gmail.com" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                target="_blank">myspace.iiitm@gmail.com</a>
+        </p>
+
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a  target="_blank" class="text-gray-500" href="https://www.facebook.com/abviiitmsma?modal=admin_todo_tour">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+            </a>
+            <a  target="_blank" class="ml-3 text-gray-500" href="https://twitter.com/AbvIiitm">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <path
+                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                    </path>
+                </svg>
+            </a>
+            <a  target="_blank" class="ml-3 text-gray-500" href="https://www.instagram.com/accounts/login/?next=/iiitmgwaliorofficial/">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+            </a>
+            <a  target="_blank" class="ml-3 text-gray-500" href="https://www.linkedin.com/in/abv-iiitm-gwalior-36396618b/">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path stroke="none"
+                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                    </path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+            </a>
+        </span>
+    </div>
+    <span id="bottom"></span>
+</footer>
+<!-- Footer Ends here -->

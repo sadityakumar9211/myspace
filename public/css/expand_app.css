@@ -1,0 +1,96 @@
+/* #onearticlebody{
+    background-color: #fbf6e0;
+} */
+.uvdv {
+    border-radius: 10px;
+    padding: 4px 4px 4px 4px;
+    background-color: rgb(189, 171, 255);
+    color: black;
+
+}
+
+.uvdv:hover {
+    filter: invert(67%) sepia(36%) saturate(460%) hue-rotate(180deg) brightness(101%) contrast(95%);
+    color: #f4f2f2;
+}
+
+.article {
+    background-color: #f5e9b2;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    transition-delay: 30ms;
+    font-family: 'Raleway', sans-serif;
+    font-size: normal;
+    font-weight: thin;
+    box-shadow: 1px 1px 3px rgb(165, 165, 165);
+}
+
+.article:hover {
+    background-color: #fef1af;
+    box-shadow: 1px 1px 3px rgb(165, 165, 165);
+    transform: scale(1.003);
+}
+
+.Ids {
+    color: rgb(125, 71, 187);
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+.Ids:hover {
+    text-decoration: underline;
+}
+
+.articleId {
+    color: rgb(125, 71, 187);
+    margin-right: 10px;
+}
+
+.articleId:hover {
+    text-decoration: underline;
+}
+
+.heading {
+    transition: text-decoration, font-weight ease-in;
+    transition-duration: 0.2s;
+
+}
+
+.heading:hover {
+    text-decoration: underline;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+header {
+    min-height: 50px;
+    background: lightcyan;
+}
+
+
+/* Trick: */
+body {
+    position: relative;
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 50px;
+    /* Set same as footer's height */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}

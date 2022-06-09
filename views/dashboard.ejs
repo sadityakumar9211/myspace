@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head starts here -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="icon" href="/images/logo.png">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/dashboard_app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;800&display=swap"
+        rel="stylesheet">
+
+    <title>MySpace - Dashboard</title>
+    <!--PROVIDE THE FIRST NAME HERE-->
+</head>
+<!-- head ends here -->
+
+<body>
+    <!-- Header starts here -->
+    <header>
+        <!-- Navbar goes here -->
+        <nav class="bg-white shadow-lg">
+            <div class="max-w-8xl mx-auto px-3">
+                <div class="flex justify-between">
+                    <div class="flex space-x-7">
+                        <div>
+                            <!-- Website Logo -->
+                            <a href="/" class="flex items-center py-4 px-2">
+                                <img src="/images/logo.png" alt="MySpace Logo" class="h-12 w-12 mr-2">
+                                <span class="font-seimbold text-gray-900 text-xl mr-4">MySpace</span>
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="/"
+                                class="py-4 px-2 text-green-500  border-b-4 border-green-500 font-semibold">Resources</a>
+                            <a href="/qa"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">QA
+                                Forum</a>
+                            <a href="/article"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">Technical
+                                Articles</a>
+
+                            <a href="/schedule"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">Schedule</a>
+                            <a href="/event"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">Events</a>
+                            <a href="/about"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">About</a>
+                        </div>
+                    </div>
+                    <!-- Secondary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-3 ">
+                        <img src="/images/user.png" alt="profile picture" class="rounded-full h-10 w-10">
+                        <a class="font-medium text-white bg-green-500 px-2 py-1 rounded hover:bg-green-400 transition duration-300"
+                            href="/logout">Logout</a>
+
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Mobile Menu Items-->
+            <div class="hidden mobile-menu">
+                <ul>
+                    <li class="active"><a href="/"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Resources</a>
+                    </li>
+                    <li><a href="/qa" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">QA
+                            Forum</a>
+                    </li>
+                    <li><a href="/article"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Technical
+                            Articles</a>
+                    </li>
+                    <li><a href="/schedule"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Schedule</a>
+                    </li>
+                    <li><a href="/event"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Events</a>
+                    </li>
+                    <li><a href="/about"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                const btn = document.querySelector("button.mobile-menu-button");
+                const menu = document.querySelector(".mobile-menu");
+
+                btn.addEventListener("click", () => {
+                    menu.classList.toggle("hidden");
+                });
+            </script>
+        </nav>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Section 2 starts here -->
+    <main class="flex grid-cols-2">
+        <!-- Sidebar starts here -->
+        <nav class="sidebar_dashboard" class="bg-white">
+            <span class="text-xl p-2 ml-2 border-b-4 border-green-400" id="browse">Browse Resources</span>
+            <ul>
+                <li class="dropdown"><a href="#">Semester I <span>&rsaquo;</span></a>
+                    <ul>
+                        <li><a href="/bcs1">BCS</a></li>
+                        <li><a href="/imt1">IMT</a></li>
+                        <li><a href="/img1">IMG</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Semester II <span>&rsaquo;</span></a>
+                    <ul>
+                        <li><a href="/bcs2">BCS</a></li>
+                        <li><a href="/imt2">IMT</a></li>
+                        <li><a href="/img2">IMG</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Semester III <span>&rsaquo;</span></a>
+                    <ul>
+                        <li><a href="/bcs3">BCS</a></li>
+                        <li><a href="/imt3">IMT</a></li>
+                        <li><a href="/img3">IMG</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Semester IV <span>&rsaquo;</span></a>
+                    <ul>
+                        <li><a href="/bcs4">BCS</a></li>
+                        <li><a href="/imt4">IMT</a></li>
+                        <li><a href="/img4">IMG</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Semester V <span>&rsaquo;</span></a>
+                    <ul>
+                        <li><a href="/bcs5">BCS</a></li>
+                        <li><a href="/imt5">IMT</a></li>
+                        <li><a href="/img5">IMG</a></li>
+                    </ul>
+                </li class="dropdown">
+                <li class="dropdown"><a href="#">Semester VI <span>&rsaquo;</span></a>
+                    <ul>
+                        <li><a href="/bcs6">BCS</a></li>
+                        <li><a href="/imt6">IMT</a></li>
+                        <li><a href="/img6">IMG</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Semester VII <span>&rsaquo;</span></a>
+                    <ul>
+                        <li><a href="/bcs7">BCS</a></li>
+                        <li><a href="/imt7">IMT</a></li>
+                        <li><a href="/img7">IMG</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Semester VIII <span>&rsaquo;</span></a>
+                    <ul>
+                        <li><a href="/bcs8">BCS</a></li>
+                        <li><a href="/imt8">IMT</a></li>
+                        <li><a href="/img8">IMG</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Semester IX <span>&rsaquo;</span></a>
+                    <ul>
+                        <li><a href="/imt9">IMT</a></li>
+                        <li><a href="/img9">IMG</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Semester X <span>&rsaquo;</span></a>
+                    <ul>
+                        <li><a href="/imt10">IMT</a></li>
+                        <li><a href="/img10">IMG</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+        <!-- Sidebar Ends here -->
+
+        <!-- Section 2 User dashboard contents-->
+        <section class="text-gray-600 body-font">
+            <!-- This is Google Custom Search - Need's to be modified -->
+            <div id>
+                <script async src="https://cse.google.com/cse.js?cx=8f6fc8a0d1e5ef5ec"></script>
+                <div class="gcse-search"></div>
+            </div>
+            <!-- This is Google Custom Search - Need's to be modified -->
+            <div class="container px-5 py-16 mx-auto">
+                <div class="flex flex-col text-center w-full mb-10">
+                    <h2 class="text-xs text-green-500 tracking-widest font-medium title-font mb-1">THIS IS YOUR MYSPACE
+                        DASHBOARD
+                    </h2>
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Welcome, <%=name%>
+                            <br><span class="text-xl">
+                                <%=email%>
+                            </span>
+                    </h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">From Dashboard you can navigate to all the
+                        sections of MySpace website. You can browse and search for resources.
+                        Below you can find your recently asked/answered questions and written articles.</p>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full px-8 py-2 border-l-2 border-gray-200 border-opacity-60">
+                        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Question-Answers</h2>
+                        <ol>
+                            <li>
+                                <p class="leading-relaxed text-base mb-0">Click on View to see all the Questions along
+                                    with their Answers that you had posted.</p>
+                                <a class="text-green-500 inline-flex items-center mb-3" href="renderqa">View
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2"
+                                        viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="xl:w-1/2 lg:w-1/2 md:w-full px-8 py-2 border-l-2 border-gray-200 border-opacity-60">
+                        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Technical Articles</h2>
+                        <ol>
+                            <li>
+                                <p class="leading-relaxed text-base mb-0">Click on View to see all the Articles that you
+                                    had posted.</p>
+                                <a class="text-green-500 inline-flex items-center mb-3" href="renderart">View
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2"
+                                        viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 2 ends here -->
+    </main>
+
+    <!-- Section 4 - Contact Us -->
+    <section class="text-gray-600 body-font relative">
+        <h2 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 text-center pt-3 pb-0 mb-2">Contact Us
+        </h2>
+        <hr>
+        <div class="container px-5 py-16 mx-auto flex sm:flex-nowrap flex-wrap">
+            <div
+                class="lg:w-8/12 md:w-1/2 bg-gray-400 absolute-inset-0 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0"
+                    marginwidth="0" scrolling="no"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.376022113183!2d78.17195011430893!3d26.24945689464736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c6e5d32a4d53%3A0xf834069adc0c9b89!2sIndian%20Institute%20of%20Information%20Technology%20and%20Management%20Gwalior!5e0!3m2!1sen!2sin!4v1648145357495!5m2!1sen!2sin"
+                    style="filter: grayscale(0.3) contrast(1) opacity(0.8);"></iframe>
+                <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                    <div class="lg:w-1/2 px-6">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+                        <p class="mt-1">Morena Link Rd, IIITM Campus, Gwalior, Madhya Pradesh 474015</p>
+                    </div>
+                    <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">Website</h2>
+                        <a class="text-green-500 leading-relaxed" href="https://www.iiitm.ac.in/">iiitm.ac.in</a>
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">Phone</h2>
+                        <a class="leading-relaxed" href="tel:0751-244-9801">0751-244-9801</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-3/12 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font m-auto">Feedback</h2>
+                <div class="relative mb-4">
+                    <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                    <label for="email" class="leading-7 text-sm text-gray-600">E-mail</label>
+                    <input type="email" id="email" name="email"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                    <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                    <textarea id="message" name="message"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+                <button
+                    class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Submit</button>
+                <p class="text-xs text-gray-500 mt-3">Please submit your feedback or complaint here! We'll get back you
+                    by email within two days.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Section 4 - Contact Us Ends here -->
+    <hr>
+    <!-- Section 5 - Footer -->
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img src="/images/logo.png" class="w-12 h-12" alt="MySpace Logo">
+                <span class="ml-3 text-xl">MySpace</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                <a href="/">2022 MySpace</a>
+                <a href="mailto:myspace.iiitm@gmail.com" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank">myspace.iiitm@gmail.com</a>
+            </p>
+
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a target="_blank" class="text-gray-500"
+                    href="https://www.facebook.com/abviiitmsma?modal=admin_todo_tour">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a target="_blank" class="ml-3 text-gray-500" href="https://twitter.com/AbvIiitm">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a target="_blank" class="ml-3 text-gray-500"
+                    href="https://www.instagram.com/accounts/login/?next=/iiitmgwaliorofficial/">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a target="_blank" class="ml-3 text-gray-500"
+                    href="https://www.linkedin.com/in/abv-iiitm-gwalior-36396618b/">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+        <span id="bottom"></span>
+    </footer>
+    <!-- Footer Ends here -->
+
+</body>
+
+</html>

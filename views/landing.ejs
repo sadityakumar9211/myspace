@@ -1,0 +1,419 @@
+<!-- This is the landing page of MySpace -->
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- head starts here -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logo.png">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/landing.css">
+    <title>MySpace - Homepage</title>
+
+
+</head>
+<!-- head ends here -->
+
+<body>
+    <header>
+        <!-- Navbar goes here -->
+        <nav class="bg-white shadow-lg">
+            <div class="max-w-8xl mx-auto px-3">
+                <div class="flex justify-between">
+                    <div class="flex space-x-7">
+                        <div>
+                            <!-- Website Logo -->
+                            <a href="/" class="flex items-center py-4 px-2">
+                                <img src="/images/logo.png" alt="MySpace Logo" class="h-12 w-12 mr-2">
+                                <span class="font-seimbold text-gray-900 text-xl mr-4">MySpace</span>
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="/"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">Resources</a>
+                            <a href="/qa"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">QA
+                                Forum</a>
+                            <a href="/article"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">Technical
+                                Articles</a>
+                            <a href="/schedule"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">Schedule</a>
+                            <a href="/event"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">Events</a>
+                            <a href="/about"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">About</a>
+                        </div>
+                    </div>
+                    <!-- Secondary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-3 ">
+                        <a href="/register"
+                            class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign
+                            Up</a>
+                        <a href="/login"
+                            class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Sign
+                            In</a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu Items-->
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li class="active"><a href="/"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Resources</a>
+                    </li>
+                    <li><a href="/qa" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">QA
+                            Forum</a>
+                    </li>
+                    <li><a href="/article"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Technical
+                            Articles</a>
+                    </li>
+                    <li><a href="/schedule"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Schedule</a>
+                    </li>
+                    <li><a href="/event"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Events</a>
+                    </li>
+                    <li><a href="/about"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                const btn = document.querySelector("button.mobile-menu-button");
+                const menu = document.querySelector(".mobile-menu");
+
+                btn.addEventListener("click", () => {
+                    menu.classList.toggle("hidden");
+                });
+            </script>
+        </nav>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- First Section -  Introduction with Image -->
+    <section class="text-gray-600 body-font">
+
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero"
+                    src="https://source.unsplash.com/720x600/?learning">
+            </div>
+
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">MySpace
+                    <br class="hidden lg:inline-block"><span class="text-2xl">A socio-academic site for Students</span>
+                </h1>
+                <p class="mb-8 leading-relaxed" style="text-align: justify">MySpace is a socio-academic site for the
+                    students of ABV-IIITM Gwalior. Students can access and download a ton of helpful resources including
+                    but not limited to notes, previous year papers, etc. They can ask their doubts and share their ideas
+                    and knowledge through the QA Forum and Technical Articles sections. They can also be updated with
+                    latest
+                    class schedule and events organised in the Institute.</p>
+                <div class="flex justify-center">
+                    <button
+                        class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg ">
+                        <a href="/register">Sign Up</a></button>
+                    <button
+                        class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"><a
+                            href="/login">Sign
+                            In </a></button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- First section ends here -->
+    <hr>
+    <!-- Section 2 - Describing the features of website -->
+    </section>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Features & Utilities</h1>
+                <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">MySpace attempts to make the lives of Students
+                    simpler by organizing all of the things they need in one place.</p>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Authentication</h2>
+                        <p class="leading-relaxed text-base text-justify">The Students need to Sign Up with their
+                            Institutional
+                            E-mail to access various features of the website.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="text-green-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+                                <path d="M8 17l4 4 4-4m-4-5v9"></path>
+                                <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Resources</h2>
+                        <p class="leading-relaxed text-base text-justify">Students after signing in to the dashboard can
+                            access
+                            valuable resources like notes, PYQ, lecture slides.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
+                            <img src="/images/QA svg.png" alt="QA Forum Logo">
+
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">QA Forum</h2>
+                        <p class="leading-relaxed text-base text-justify">In QA Forum, students can ask and answer
+                            academic, technical and coding related questions.</p>
+                    </div>
+                </div>
+
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
+                            <img
+                                src="data:image/png;base64,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">
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Technical Articles</h2>
+                        <p class="leading-relaxed text-base text-justify">In Technical Articles section,students can
+                            post
+                            articles based to their technical interests. Others can read and upvote their articles.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
+                            <img
+                                src="data:image/png;base64,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">
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Schedule</h2>
+                        <p class="leading-relaxed text-base text-justify">Here the students can view their updated class
+                            schedules after Signing In to the website.</p>
+                    </div>
+                </div>
+                <div class="xl:w-1/3 md:w-1/2 p-4">
+                    <div class="border border-gray-200 p-6 rounded-lg">
+                        <div
+                            class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-4">
+                            <img
+                                src="data:image/png;base64,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">
+                        </div>
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Events</h2>
+                        <p class="leading-relaxed text-base text-justify">In this section of the website, students can
+                            view the details of upcoming events organised by various Institute clubs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center">
+            <button
+                class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg "><a
+                    href="/register">Sign
+                    Up</a></button>
+            <button
+                class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"><a
+                    href="/login">Sign
+                    In</a></button>
+        </div>
+    </section>
+    <!-- Section 2 - Features Section ends here -->
+    <br><br>
+    <hr>
+
+    <!-- Section 3 - Team Information -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Team - Group 3</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">This is a Software Engineering Lab Project built
+                    under the supervision of Dr. Santosh Singh Rathore.</p>
+            </div>
+            <div class="flex flex-wrap -m-2">
+                <div class="p-2 lg:w-1/3 m-auto w-full">
+                    <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-top flex-shrink-0 rounded-full mr-4"
+                            src="/images/teacher.png">
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 title-font font-medium">Dr. Santosh Singh Rathore</h2>
+                            <p class="text-gray-500">Assistant Professor, CSE, IIITM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -m-2">
+                <div class="p-2 lg:w-1/3 w-full">
+                    <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                            src="/images/abhi.png">
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 title-font font-medium">Abhisekh Yadav, 2020BCS-003</h2>
+                            <p class="text-gray-500">Student, IIITM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 lg:w-1/3 w-full">
+                    <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                            src="/images/aditya.png">
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 title-font font-medium">Aditya Kumar Singh, 2020BCS-004</h2>
+                            <p class="text-gray-500">Student, IIITM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 lg:w-1/3 w-full">
+                    <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                            src="/images/anamika.png">
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 title-font font-medium">Anamika Mallick, 2020BCS-075</h2>
+                            <p class="text-gray-500">Student, IIITM</p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!-- Section 3 - Team Introduction ends here -->
+    <hr>
+    <!-- Section 4 - Contact Us -->
+    <section class="text-gray-600 body-font relative">
+        <h2 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 text-center pt-3 pb-0 mb-2">Contact Us
+        </h2>
+        <div class="container px-5 py-16 mx-auto flex sm:flex-nowrap flex-wrap">
+            <div
+                class="lg:w-8/12 md:w-1/2 bg-gray-400 absolute-inset-0 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0"
+                    marginwidth="0" scrolling="no"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.376022113183!2d78.17195011430893!3d26.24945689464736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c6e5d32a4d53%3A0xf834069adc0c9b89!2sIndian%20Institute%20of%20Information%20Technology%20and%20Management%20Gwalior!5e0!3m2!1sen!2sin!4v1648145357495!5m2!1sen!2sin"
+                    style="filter: grayscale(0.3) contrast(1) opacity(0.8);"></iframe>
+                <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                    <div class="lg:w-1/2 px-6">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+                        <p class="mt-1">Morena Link Rd, IIITM Campus, Gwalior, Madhya Pradesh 474015</p>
+                    </div>
+                    <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">Website</h2>
+                        <a class="text-green-500 leading-relaxed" href="https://www.iiitm.ac.in/">iiitm.ac.in</a>
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">Phone</h2>
+                        <a class="leading-relaxed" href="tel:0751-244-9801">0751-244-9801</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-3/12 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                <form action="/feedback" method="post">
+                    <h2 class="text-gray-900 text-lg mb-1 font-medium title-font m-auto">Feedback</h2>
+                    <div class="relative mb-4">
+                        <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                        <input type="text" autocomplete="off" id="name" name="name"
+                            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <div class="relative mb-4">
+                        <label for="email" class="leading-7 text-sm text-gray-600">E-mail</label>
+                        <input type="email" autocomplete="off" id="email" name="email"
+                            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <div class="relative mb-4">
+                        <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                        <textarea id="message" autocomplete="off" name="message"
+                            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    </div>
+                    <button type="submit" class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none
+                        hover:bg-green-600 rounded text-lg">Submit</button>
+                    <p class="text-xs text-gray-500 mt-3">Please submit your feedback or complaint here! We'll get back
+                        you
+                        by email within two days.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Section 4 - Contact Us Ends here -->
+    <hr>
+    <!-- Section 5 - Footer -->
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="/">
+                <img src="/images/logo.png" class="w-12 h-12" alt="MySpace Logo">
+                <span class="ml-3 text-xl">MySpace</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                <a href="/">2022 MySpace</a> —
+                <a href="mailto:myspace.iiitm@gmail.com" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank">myspace.iiitm@gmail.com</a>
+            </p>
+
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a  target="_blank" class="text-gray-500" href="https://www.facebook.com/abviiitmsma?modal=admin_todo_tour">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a  target="_blank" class="ml-3 text-gray-500" href="https://twitter.com/AbvIiitm">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a  target="_blank" class="ml-3 text-gray-500" href="https://www.instagram.com/accounts/login/?next=/iiitmgwaliorofficial/">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a  target="_blank" class="ml-3 text-gray-500" href="https://www.linkedin.com/in/abv-iiitm-gwalior-36396618b/">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+        <span id="bottom"></span>
+    </footer>
+    <!-- Footer Ends here -->
+
+</body>
+
+</html>

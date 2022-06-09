@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head starts here -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="icon" href="/images/logo.png">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/npl9j919xk0atoloirbqbun4ug6lli1xdv75hff9ifvblelp/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <link rel="stylesheet" href="/css/about_app.css">
+    <title>MySpace - About</title>
+    <!--PROVIDE THE FIRST NAME HERE-->
+</head>
+<!-- head ends here -->
+
+<body>
+
+    <!-- Header starts here -->
+    <header>
+        <!-- Navbar goes here -->
+        <nav class="bg-white shadow-lg">
+            <div class="max-w-8xl mx-auto px-3">
+                <div class="flex justify-between">
+                    <div class="flex space-x-7">
+                        <div>
+                            <!-- Website Logo -->
+                            <a href="/" class="flex items-center py-4 px-2">
+                                <img src="/images/logo.png" alt="MySpace Logo" class="h-12 w-12 mr-2">
+                                <span class="font-seimbold text-gray-900 text-xl mr-4">MySpace</span>
+                            </a>
+                        </div>
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="/"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">Resources</a>
+                            <a href="/qa"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">QA
+                                Forum</a>
+                            <a href="/article"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">Technical
+                                Articles</a>
+
+                            <a href="/schedule"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">Schedule</a>
+                            <a href="/event"
+                                class="py-4 px-2 text-gray-700 font-semibold hover:text-green-500 transition duration-300">Events</a>
+                            <a href="/about"
+                                class="py-4 px-2 text-green-500  border-b-4 border-green-500 font-semibold">About</a>
+                        </div>
+                    </div>
+                    <!-- Secondary Navbar items -->
+                   
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Mobile Menu Items-->
+            <div class="hidden mobile-menu">
+                <ul>
+                    <li><a href="/"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Resources</a>
+                    </li>
+                    <li><a href="/qa"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">QA
+                            Forum</a>
+                    </li>
+                    <li><a href="/article"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Technical
+                            Articles</a>
+                    </li>
+                    <li><a href="/schedule"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Schedule</a>
+                    </li>
+                    <li><a href="/event"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Events</a>
+                    </li>
+                    <li class="active"><a href="/about"
+                        class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a>
+                </li>
+                </ul>
+            </div>
+            <script>
+                const btn = document.querySelector("button.mobile-menu-button");
+                const menu = document.querySelector(".mobile-menu");
+
+                btn.addEventListener("click", () => {
+                    menu.classList.toggle("hidden");
+                });
+            </script>
+        </nav>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Header ends here -->
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-12 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">OUR TEAM - Group 3</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">This is a Software Engineering Lab Project built
+                    under the supervision of <br> Dr. Santosh Singh Rathore, Assistant Professor, CSE, IIITM.
+                </p>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/4 md:w-1/2 m-auto">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-top flex-shrink-0 rounded-full mr-4"
+                            src="/images/abhi.png">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Abhisekh Yadav</h2>
+                            <h3 class="text-gray-500 mb-0">Student, 2020BCS-003</h3>
+                            <h3 class="text-gray-500 mb-3"></h3>
+
+                            <span class="inline-flex">
+                                <a class="text-gray-500" href="#">
+                                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path stroke="none"
+                                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                        </path>
+                                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500" href="#">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500" href="#">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-4 lg:w-1/4 md:w-1/2 m-auto">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-top flex-shrink-0 rounded-full mr-4"
+                            src="/images/aditya.png">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Aditya Kumar Singh</h2>
+                            <h3 class="text-gray-500 mb-3">Student, 2020BCS-004</h3>
+
+                            <span class="inline-flex">
+                                <a class="text-gray-500" href="#">
+                                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path stroke="none"
+                                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                        </path>
+                                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500" href="#">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500" href="#">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2 m-auto">
+                    <div class="h-full flex flex-col items-center text-center">
+                        <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-top flex-shrink-0 rounded-full mr-4"
+                            src="/images/anamika.png">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Anamika Mallick</h2>
+                            <h3 class="text-gray-500 mb-3">Student, 2020BCS-075</h3>
+
+                            <span class="inline-flex">
+                                <a class="text-gray-500" href="#">
+                                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path stroke="none"
+                                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                                        </path>
+                                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500" href="#">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500" href="#">
+                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <hr>
+    <!-- Project Documents -->
+    <div class="container px-5 py-20 mx-auto">
+        <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                <h2 class="text-gray-900 text-2xl title-font font-large mb-2 text-center">Project Documents</h2>
+                <!-- List of Books -->
+                <div class="flex flex-wrap lg:w-full sm:mx-auto sm:mb-2 -mx-2">
+                    <div class="p-2 sm:w-1/2 w-full">
+                        <a href="https://drive.google.com/file/d/1U--ekrA_yyCQXx4Qnv8P36ve6XojQ6Me/view?usp=sharing">
+                            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="text-green-500 w-6 h-6 flex-shrink-0 mr-4"
+                                    viewBox="0 0 24 24">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                    <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium text-center"><strong>Software Feasibility Report</strong></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full">
+                        <a href="https://drive.google.com/file/d/1T-FdHgtrXV50PKqTYmoh2O_D-V8oKnK8/view?usp=sharing">
+                            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="text-green-500 w-6 h-6 flex-shrink-0 mr-4"
+                                    viewBox="0 0 24 24">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                    <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium text-center"><strong>Software Requirements & Specification
+                                        Document</strong></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full">
+                        <a href="https://drive.google.com/file/d/1tC2j4xzbr0KgnSDUM5Yk5qTSOEapqZNA/view?usp=sharing">
+                            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="text-green-500 w-6 h-6 flex-shrink-0 mr-4"
+                                    viewBox="0 0 24 24">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                    <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium text-center"><strong>Software Project Management
+                                        Report</strong></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full">
+                        <a href="https://drive.google.com/file/d/1lIBo2BDF3_O3XcaaZshNySmmyqdpVLMf/view?usp=sharing">
+                            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="text-green-500 w-6 h-6 flex-shrink-0 mr-4"
+                                    viewBox="0 0 24 24">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                    <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium text-center"><strong>Software Design Document</strong></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-2 sm:w-1/2 w-full mx-auto">
+                        <a href="/coming_soon">
+                            <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="text-green-500 w-6 h-6 flex-shrink-0 mr-4"
+                                    viewBox="0 0 24 24">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                    <path d="M22 4L12 14.01l-3-3"></path>
+                                </svg>
+                                <span class="title-font font-medium text-center"><strong>Final Project Report</strong></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- List of Books -->
+            </div>
+        </div>
+        <!-- Project Documents ends here-->
+
+        <!-- Section 5 - Footer -->
+        
+        <footer class="text-gray-600 body-font">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <img src="/images/logo.png" class="w-12 h-12" alt="MySpace Logo">
+                    <span class="ml-3 text-xl">MySpace</span>
+                </a>
+                <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                    <a href="/">2022 MySpace</a>
+                    <a href="mailto:myspace.iiitm@gmail.com" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                        target="_blank">myspace.iiitm@gmail.com</a>
+                </p>
+
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <a  target="_blank" class="text-gray-500" href="https://www.facebook.com/abviiitmsma?modal=admin_todo_tour">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a  target="_blank" class="ml-3 text-gray-500" href="https://twitter.com/AbvIiitm">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a  target="_blank" class="ml-3 text-gray-500" href="https://www.instagram.com/accounts/login/?next=/iiitmgwaliorofficial/">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a  target="_blank" class="ml-3 text-gray-500" href="https://www.linkedin.com/in/abv-iiitm-gwalior-36396618b/">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+            <span id="bottom"></span>
+        </footer>
+        <!-- Footer Ends here -->
+
+
+</body>
+
+</html>
