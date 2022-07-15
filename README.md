@@ -11,7 +11,7 @@
    - Abishekh Yadav (2020BCS-003) [@bcsabhisekh](https://github.com/bcsabhisekh)       
    - Anamika Mallick (2020BCS-075) [@anamika1804](https://github.com/anamika1804)
    
-#### Remark -
+#### Remarks -
    For casual browsing and testing, following testing credential can be used: 
 
    Username : `ssr@iiitm.ac.in`  
