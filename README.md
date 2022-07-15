@@ -7,9 +7,9 @@
  
   Members in the group are:
  
-   - Abishekh Yadav (2020BCS-003)       
-   - Aditya Kumar Singh (2020BCS-004)  
-   - Anamika Mallick (2020BCS-075) 
+   - Aditya Kumar Singh (2020BCS-004) - Project Lead [@sadityakumar9211](https://github.com/sadityakumar9211)
+   - Abishekh Yadav (2020BCS-003) [@bcsabhisekh](https://github.com/bcsabhisekh)       
+   - Anamika Mallick (2020BCS-075) [@anamika1804](https://github.com/anamika1804)
    
 #### Remark -
    For casual browsing and testing, following testing credential can be used: 
