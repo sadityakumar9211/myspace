@@ -1,7 +1,7 @@
 # MySpace   
  You can visit the site at: [MySpace](https://mighty-fjord-39866.herokuapp.com/)
 
-# GitHub repository with only frontend part : https://github.com/sadityakumar9211/MySpace
+### GitHub repository with only frontend part : https://github.com/sadityakumar9211/MySpace
  MySpace is a socio-academic site for IIITM students
  This is a group Project under the guidance of course instructor Dr. Santosh Singh Rathore.
  
